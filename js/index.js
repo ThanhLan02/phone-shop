@@ -10,14 +10,14 @@
 	});
 })(jQuery);
 $('#fullWidthSlider').carousel({
-    interval: 5000 // 5 giây cho mỗi slide
+    interval: 5000 
   });
 
   const container = document.querySelector("#product-iphone");
   const products = document.querySelectorAll(".iphone");
   
-  let currentIndex = 0; // Vị trí sản phẩm đang được hiển thị
-  const visibleProducts = 4; // Số sản phẩm hiển thị cùng lúc
+  let currentIndex = 0; 
+  const visibleProducts = 4; 
   const totalProducts = products.length;
   
   function scrollSlider(direction) {
@@ -28,12 +28,8 @@ $('#fullWidthSlider').carousel({
     if (currentIndex < 0) {
       currentIndex = totalProducts - visibleProducts; 
     }
-  
-    // Tính toán khoảng cách trượt
     const productWidth = products[0].offsetWidth;
     const scrollAmount = currentIndex * productWidth;
-  
-    // Cập nhật vị trí container
     container.style.transform = `translateX(-${scrollAmount}px)`;
   }
 

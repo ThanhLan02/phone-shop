@@ -1,11 +1,703 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LanSHOP - Shop chuyên Apple</title>
+
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
+
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
 </head>
+
 <body>
+    <header>
+        <div id="top-header">
+            <div class="container">
+                <ul class="header-links pull-left">
+                    <li><a href="#"><i class="fa fa-phone"></i> 0904613293</a></li>
+                    <li><a href="#"><i class="fa fa-envelope-o"></i> tranthanhlanth9@email.com</a></li>
+                    <li><a href="#"><i class="fa fa-map-marker"></i> 75A Tô Hiệu, Hiệp Tân, Tân Phú, TP HCM</a></li>
+                </ul>
+                <ul class="header-links pull-right">
+                    <li><a href="#" class="iconsocial"><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li><a href="#" class="iconsocial"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#" class="iconsocial"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#" class="iconsocial"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div id="header">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <div class="header-logo">
+                            <a href="#" class="logo">
+                                <img src="./image/logo_1.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="header-banner">
+                            <img src="./image/bannerheader_1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 clearfix">
+                        <div class="header-ctn">
+                            <div>
+                                <a href="#">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>Đăng Nhập</span>
+                                </a>
+                            </div>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    <span>Giỏ hàng</span>
+                                    <div class="qty">2</div>
+                                </a>
+                                <div class="cart-dropdown">
+                                    <div class="cart-list">
+                                        <div class="product-widget">
+                                            <div class="product-img">
+                                                <button class="delete"><i class="fa fa-close"></i></button>
+                                                <img src="./image/products/iPhone/iphone1.jpeg" alt="">
+                                            </div>
+                                            <div class="product-body">
+                                                <h4 class="product-name"><a href="#">Iphone 16 Pro Max 256GB</a></h4>
+                                                <h5 class="product-price">33.090.000₫<span style="float: right;" class="qty">x1</span></h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-widget">
+                                            <div class="product-img">
+                                                <button class="delete"><i class="fa fa-close"></i></button>
+                                                <img src="./image/products/iPhone/iphone2.jpeg" alt="">
+                                            </div>
+                                            <div class="product-body">
+                                                <h4 class="product-name"><a href="#">Iphone 16 128GB</a></h4>
+                                                <h5 class="product-price">21.290.000₫<span style="float: right;" class="qty">x1</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-summary">
+                                        <small>Đã chọn 2 sản phẩm</small>
+                                        <h5>TỔNG TIỀN: 54.380.000₫</h5>
+                                    </div>
+                                    <div class="cart-btns">
+                                        <a href="#">Xem giỏ hàng</a>
+                                        <a href="#">Thanh toán  <i class="fa fa-arrow-circle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="menu-toggle">
+                                <a href="#">
+                                    <i class="fa fa-bars"></i>
+                                    <span>Menu</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav id="navigation">
+        <div class="container">
+            <div id="responsive-nav">
+                <ul class="main-nav nav navbar-nav">
+                    <li class="active"><a href="#">TRANG CHỦ</a></li>
+                    <li><a href="#">GIỚI THIỆU</a></li>
+                    <li><a href="#">IPHONE</a></li>
+                    <li><a href="#">IPAD</a></li>
+                    <li><a href="#">MAC</a></li>
+                    <li><a href="#">WATCH</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="#">DỊCH VỤ <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Bảo hành ủy quyền APPLE</a></li>
+                            <li><a href="#">APPLE Care</a></li>
+                            <li><a href="#">Bảo hành mở rộng</a></li>
+                            <li><a href="#">Bảo hành Vip 1 đổi 1</a></li>
+                            <li><a href="#">Bảo hành Kim Cương</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">TIN TỨC</a></li>
+                    <li><a href="#">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active">
+
+            </li>
+            <li data-target="#carousel-example-generic" data-slide-to="1">
+
+            </li>
+            <li data-target="#carousel-example-generic" data-slide-to="2">
+
+            </li>
+            <li data-target="#carousel-example-generic" data-slide-to="3">
+
+            </li>
+        </ol>
+
+        <div id="fullWidthSlider" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#fullWidthSlider" data-slide-to="0" class="active"></li>
+                <li data-target="#fullWidthSlider" data-slide-to="1"></li>
+                <li data-target="#fullWidthSlider" data-slide-to="2"></li>
+                <li data-target="#fullWidthSlider" data-slide-to="3"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="./image/banner1.png" alt="Slide 1">
+                </div>
+                <div class="item">
+                    <img src="./image/banner2.png" alt="Slide 2">
+                </div>
+                <div class="item">
+                    <img src="./image/banner3.png" alt="Slide 3">
+                </div>
+                <div class="item">
+                    <img src="./image/banner4.png" alt="Slide 4">
+                </div>
+            </div>
+
+            <a class="left carousel-control" href="#fullWidthSlider" data-slide="prev">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <a class="right carousel-control" href="#fullWidthSlider" data-slide="next">
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+
+    </div>
+    <div class="container">
+        <section id="collection" class="section collection">
+            <div class="collection__container" data-aos="fade-up" data-aos-duration="1000">
+                <div class="collection__box">
+                    <div class="img__container">
+                        <img class="collection_02" src="./image/products/Ipad/ipad-air-6-m2-chinh-hang-vn_d07a46bcb1ef42c19c4ac62a92f0c4dc_large.webp" alt="">
+                    </div>
+                    <div class="collection__content">
+                        <div class="collection__data">
+                            <span>GIỚI THIỆU MẪU MỚI</span>
+                            <h1>IPAD</h1>
+                            <a href="#shop">XEM NGAY</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collection__box">
+                    <div class="img__container">
+                        <img class="collection_01" src="./image/collection_01.png" alt="">
+                    </div>
+                    <div class="collection__content">
+                        <div class="collection__data">
+                            <span>GIỚI THIỆU MẪU MỚI</span>
+                            <h1>IPHONE</h1>
+                            <a href="#">XEM NGAY</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <div class="title__container">
+            <div class="section__title active" data-id="Iphone" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="primary__title">Iphone</h1>
+            </div>
+        </div>
+
+        <div class="slider-wrapper" data-aos="fade-up" data-aos-duration="1000">
+            <button class="prev" onclick="scrollSlider(-1)">&#10094;</button>
+            <div class="product-container-wrapper">
+                <div class="product-container" id="product-iphone">
+                    <div class="product iphone">
+                        <img src="./image/products/iPhone/iphone1.jpeg" alt="Product 1">
+                        <a href="#">
+                            <h2>Iphone 16 128GB</h2>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <span class="new_price">21.290.000₫</span> -
+                            <span class="old_price">22.990.000₫</span>
+                        </div>
+                        <div class="add-to-cart">
+                            <button type="button" class="addcart btn btn-outline-secondary"><i
+                                    class="fa-solid fa-cart-shopping"></i> Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                    <div class="product iphone">
+                        <img src="./image/products/iPhone/iphone2.jpeg" alt="Product 2">
+                        <h2>Iphone 16 Pro 128GB</h2>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <span class="new_price">12.790.000₫</span> -
+                            <span class="old_price">15.990.000₫</span>
+                        </div>
+                        <div class="add-to-cart">
+                            <button type="button" class="addcart btn btn-outline-secondary"><i
+                                    class="fa-solid fa-cart-shopping"></i> Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                    <div class="product iphone">
+                        <img src="./image/products/iPhone/iphone2.jpeg" alt="Product 3">
+                        <h2>Iphone 16 Pro 512GB</h2>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <span class="new_price">32.790.000₫</span> -
+                            <span class="old_price">28.990.000₫</span>
+                        </div>
+                        <div class="add-to-cart">
+                            <button type="button" class="addcart btn btn-outline-secondary"><i
+                                    class="fa-solid fa-cart-shopping"></i> Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                    <div class="product iphone">
+                        <img src="./image/products/iPhone/iphone3.jpeg" alt="Product 4">
+                        <h2>Iphone 16 512GB</h2>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <span class="new_price">12.790.000₫</span> -
+                            <span class="old_price">15.990.000₫</span>
+                        </div>
+                        <div class="add-to-cart">
+                            <button type="button" class="addcart btn btn-outline-secondary"><i
+                                    class="fa-solid fa-cart-shopping"></i> Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                    <div class="product iphone">
+                        <img src="./image/products/iPhone/iphone1.jpeg" alt="Product 1">
+                        <a href="#">
+                            <h2>Iphone 16 128GB</h2>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <span class="new_price">21.290.000₫</span> -
+                            <span class="old_price">22.990.000₫</span>
+                        </div>
+                        <div class="add-to-cart">
+                            <button type="button" class="addcart btn btn-outline-secondary"><i
+                                    class="fa-solid fa-cart-shopping"></i> Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                    <div class="product iphone">
+                        <img src="./image/products/iPhone/iphone2.jpeg" alt="Product 2">
+                        <h2>Iphone 16 Pro 128GB</h2>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <span class="new_price">12.790.000₫</span> -
+                            <span class="old_price">15.990.000₫</span>
+                        </div>
+                        <div class="add-to-cart">
+                            <button type="button" class="addcart btn btn-outline-secondary"><i
+                                    class="fa-solid fa-cart-shopping"></i> Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                    <div class="product iphone">
+                        <img src="./image/products/iPhone/iphone2.jpeg" alt="Product 3">
+                        <h2>Iphone 16 Pro 512GB</h2>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <span class="new_price">32.790.000₫</span> -
+                            <span class="old_price">28.990.000₫</span>
+                        </div>
+                        <div class="add-to-cart">
+                            <button type="button" class="addcart btn btn-outline-secondary"><i
+                                    class="fa-solid fa-cart-shopping"></i> Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                    <div class="product iphone">
+                        <img src="./image/products/iPhone/iphone3.jpeg" alt="Product 4">
+                        <h2>Iphone 16 512GB</h2>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <span class="new_price">12.790.000₫</span> -
+                            <span class="old_price">15.990.000₫</span>
+                        </div>
+                        <div class="add-to-cart">
+                            <button type="button" class="addcart btn btn-outline-secondary"><i
+                                    class="fa-solid fa-cart-shopping"></i> Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="next" onclick="scrollSlider(1)">&#10095;</button>
+        </div>
+
+        <div class="title__container">
+            <div class="section__title active" data-id="Iphone" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="primary__title">Ipad</h1>
+            </div>
+        </div>
+
+        <div class="slider-wrapper" data-aos="fade-up" data-aos-duration="1000">
+            <button class="prev" onclick="scrollSlider2(-1)">&#10094;</button>
+            <div class="product-container-wrapper">
+                <div class="product-container" id="product-ipad">
+                    <div class="product  ipad">
+                        <img src="./image/products/Ipad/mini7moii_6bfab62bb5b04cfa8a3484538a1fbbab_large.webp" alt="Product 1">
+                        <a href="#">
+                            <h3>iPad Pro 11 inch M4 (2024) - 256GB Wifi Chính hãng Việt Nam</h3>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <span class="new_price">12.790.000₫</span> -
+                            <span class="old_price">15.990.000₫</span>
+                        </div>
+                        <div class="add-to-cart">
+                            <button type="button" class="addcart btn btn-outline-secondary"><i
+                                    class="fa-solid fa-cart-shopping"></i> Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                    <div class="product ipad">
+                        <img src="./image/products/Ipad/ipad-air-6-m2-chinh-hang-vn_d07a46bcb1ef42c19c4ac62a92f0c4dc_large.webp" alt="Product 2">
+                        <h3>iPad Air 6 11 inch M2 (2024) - 128GB Wifi Chính hãng Việt Nam</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <span class="new_price">12.790.000₫</span> -
+                            <span class="old_price">15.990.000₫</span>
+                        </div>
+                        <div class="add-to-cart">
+                            <button type="button" class="addcart btn btn-outline-secondary"><i
+                                    class="fa-solid fa-cart-shopping"></i> Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                    <div class="product ipad">
+                        <img src="./image/products/Ipad/ipad-pro-m4-m_oi_017ce03c9b9b459494e8883c8194740a_large.webp" alt="Product 3">
+                        <h3>iPad Mini 7 - 128GB Wi-Fi nhiều màu - Hàng chính hãng</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <span class="new_price">12.790.000₫</span> -
+                            <span class="old_price">15.990.000₫</span>
+                        </div>
+                        <div class="add-to-cart">
+                            <button type="button" class="addcart btn btn-outline-secondary"><i
+                                    class="fa-solid fa-cart-shopping"></i> Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                    <div class="product ipad">
+                        <img src="./image/products/Ipad/ipad_gen_10_wifi_0_a7f2eb6ef3d8446eb17f8d9b399c7ee9_large.webp" alt="Product 4">
+                        <h3>iPad Mini 6 - 64GB Wi-Fi nhiều màu - Hàng chính hãng</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <span class="new_price">12.790.000₫</span> -
+                            <span class="old_price">15.990.000₫</span>
+                        </div>
+                        <div class="add-to-cart">
+                            <button type="button" class="addcart btn btn-outline-secondary"><i
+                                    class="fa-solid fa-cart-shopping"></i> Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                    <div class="product ipad">
+                        <img src="./image/products/Ipad/ipad_gen_9_wifi_chinh_hang_8c3c35bedebd4b01828a70fe6533738c_large.webp" alt="Product 1">
+                        <h3>iPad Gen 10 - 64GB Wi-Fi - 10.9 inch - Nhiều màu - iPad chính hãng</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <span class="new_price">12.790.000₫</span> -
+                            <span class="old_price">15.990.000₫</span>
+                        </div>
+                        <div class="add-to-cart">
+                            <button type="button" class="addcart btn btn-outline-secondary"><i
+                                    class="fa-solid fa-cart-shopping"></i> Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                    <div class="product ipad">
+                        <img src="./image/products/Ipad/ipad_mini_6_cellular_chinh_hang_7f9644c300554c6b9003699ceb977ee7_large.webp" alt="Product 2">
+                        <h3>iPad Gen 9 - 64GB Wi-Fi màu Silver & Space Gray - Hàng chính hãng</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <span class="new_price">12.790.000₫</span> -
+                            <span class="old_price">15.990.000₫</span>
+                        </div>
+                        <div class="add-to-cart">
+                            <button type="button" class="addcart btn btn-outline-secondary"><i
+                                    class="fa-solid fa-cart-shopping"></i> Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                    <div class="product ipad">
+                        <img src="./image/products/Ipad/ipad-pro-m4-m_oi_017ce03c9b9b459494e8883c8194740a_large.webp" alt="Product 3">
+                        <h3>iPad Mini 7 - 128GB Wi-Fi nhiều màu - Hàng chính hãng</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <span class="new_price">12.790.000₫</span> -
+                            <span class="old_price">15.990.000₫</span>
+                        </div>
+                        <div class="add-to-cart">
+                            <button type="button" class="addcart btn btn-outline-secondary"><i
+                                    class="fa-solid fa-cart-shopping"></i> Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                    <div class="product ipad">
+                        <img src="./image/products/Ipad/ipad_gen_10_wifi_0_a7f2eb6ef3d8446eb17f8d9b399c7ee9_large.webp" alt="Product 4">
+                        <h3>iPad Mini 6 - 64GB Wi-Fi nhiều màu - Hàng chính hãng</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="price">
+                            <span class="new_price">12.790.000₫</span> -
+                            <span class="old_price">15.990.000₫</span>
+                        </div>
+                        <div class="add-to-cart">
+                            <button type="button" class="addcart btn btn-outline-secondary"><i
+                                    class="fa-solid fa-cart-shopping"></i> Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="next" onclick="scrollSlider2(1)">&#10095;</button>
+        </div>
+        <div class="row">
+            <div class="col-md-6 why-choose" data-aos="zoom-in" data-aos-duration="1200">
+                <h2>DÀNH CHO DOANH NGHIỆP</h2>
+                <h3 class="animated-text">Chọn LANSHOP làm bạn đồng hành!</h3>
+                <p>Tại LANSHOP, chúng tôi cung cấp kiến thức chuyên môn về mặt kỹ thuật, thương mại và vận hành trên quy mô toàn
+                    cầu ở mọi lĩnh vực hoạt động. Vender là đại lý ủy quyền chính thức của Apple tại Việt Nam (Apple Authorized
+                    Reseller – AAR). Dựa vào các lợi thế hoàn hảo, tồn kho lớn, đội ngũ kỹ thuật chuyên nghiệp, Vender giúp
+                    doanh nghiệp tiếp cận các giải pháp tuyệt vời mà Apple mang lại để cải thiện kết quả kinh doanh!</p>
+            </div>
+            <div class="col-md-6 text-center" data-aos="zoom-in-right" data-aos-duration="1200">
+                <iframe width="100%" height="402" src="https://www.youtube.com/embed/JjpGvjy0Gxk"
+                    title="Introducing the all-new Mac mini | Apple" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="row" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="col-md-12 banner-business">
+                <a href="#"><img src="./image/banner5.jpeg" alt=""></a>
+            </div>
+        </div>
+        <div class="title__container">
+            <div class="section__title active" data-id="Iphone" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="primary__title">Tin Tức</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4" data-aos="zoom-in-right" data-aos-duration="1000">
+                <div class="thumbnail"> <img src="./image/tintuc1.jpeg" alt="MacBook Air M1">
+                    <div class="caption">
+                        <a href="#"><h4>Đánh giá MacBook Air M1: MacBook Air M1 có ổn không? Dùng được mấy năm nữa?</h4></a>
+                        <p>25/12/2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-out-up" data-aos-duration="1000">
+                <div class="thumbnail"> <img src="./image/tintuc2.jpeg" alt="MacBook for IT students">
+                    <div class="caption">
+                        <a href="#"><h4>11 điều chứng minh MacBook là “đôi bạn cùng tiến” với sinh viên IT</h4></a>
+                        <p>13/12/2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in-left" data-aos-duration="1000">
+                <div class="thumbnail"> <img src="./image/tintuc3.png" alt="Black Friday Sale">
+                    <div class="caption">
+                        <a href="#"><h4>BLACK FRIDAY - DEAL SLAY, GIÁ RẺ NGẤT NGÂY</h4></a>
+                        <p>23/11/2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
+    <div class="text-center infomation"> 
+        <button type="button" class="btn btn-outline-primary">Xem tất cả Tin Tức</button> 
+    </div>
+
+    <footer id="footer">
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footer">
+                            <h2 class="footer-title">THÔNG TIN LIÊN HỆ</h2>
+                            <p>Năm 2020, LanShop trở thành đại lý ủy quyền của Apple. Chúng tôi phát triển chuỗi cửa hàng tiêu chuẩn và Apple Mono Store nhằm mang đến trải nghiệm tốt nhất về sản phẩm và dịch vụ của Apple cho người dùng Việt Nam.</p>
+                            <ul class="footer-links">
+                                <li><a href="#"><i class="fa fa-map-marker"></i>75A Tô Hiệu, Hiệp Tân, Tân Phú</a></li>
+                                <li><a href="#"><i class="fa fa-phone"></i>0904613293</a></li>
+                                <li><a href="#"><i class="fa fa-envelope-o"></i>tranthanhlanth9@email.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footer">
+                            <h3 class="footer-title">CHÍNH SÁCH HỖ TRỢ</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">Chính sách bảo mật</a></li>
+                                <li><a href="#">Chính sách thanh toán</a></li>
+                                <li><a href="#">Chính sách đổi trả</a></li>
+                                <li><a href="#">Hướng dẫn đặt hàng</a></li>
+                                <li><a href="#">Phương thức vận chuyển
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="clearfix visible-xs"></div>
+
+                    <div class="col-md-6">
+                        <div class="footer">
+                            <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5314083248873!2d106.62339117570329!3d10.770551359300708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c203461f629%3A0xa4f6eb4e744dabf9!2zQ2h1bmcgQ8awIDhYIMSQ4bqnbSBTZW4!5e0!3m2!1svi!2s!4v1731732803219!5m2!1svi!2s"
+                         style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bottom-footer" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <ul class="footer-payments">
+                            <li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
+                            <li><a href="#"><i class="fa fa-credit-card"></i></a></li>
+                            <li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-credit-card"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-money-bill"></i></a></li>
+                        </ul>
+                        <span class="copyright">
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> 
+                            All rights reserved | This Website is made by 
+                            <i class="fa fa-heart-o" aria-hidden="true"></i> by 
+                            <a href="https://colorlib.com" target="_blank">LÂN</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button id="scrollToTopBtn" class="btn btn-primary"><i class="fa-solid fa-up-long"></i></button>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://kit.fontawesome.com/9875dd89c8.js" crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
